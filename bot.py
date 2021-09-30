@@ -95,7 +95,7 @@ Welcom Back👋 , To Spam Send 📤
 		    }
                         def spam(): 
                             try:
-                                r = requests.post(url, headers=hd, data=data, proxies=prox).text
+                                r = requests.post(url, headers=hd, data=data).text
                                 if 'rfvtxtVerificationCode' in r:
     	                            bot.send_message(message.chat.id, text='✅ Done Send SMS ☠', parse_mode='markdown')
     	                            pass
